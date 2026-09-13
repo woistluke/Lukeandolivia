@@ -32,8 +32,9 @@ Search the file for `EDIT ME` to find every spot at once.
    (or edit the `url()` in the `.hero` rule in `css/style.css` to point at a
    different filename). Adjust `background-position` there if the photo
    gets cropped in a spot you don't like.
-3. **Our Story photo:** in `index.html`, find `<div class="story-photo">`
-   and replace its contents with `<img src="images/us.jpg" alt="Luke and Olivia">`.
+3. **Our Story photo:** already set to `images/story.jpg`. Swap it the same
+   way as the hero photo — replace the file, or edit the `<img src>` in
+   `index.html` inside `<div class="story-photo">`.
 4. **Things To Do cards:** each `<div class="activity-photo">` can be swapped
    the same way — replace the emoji with an `<img>` tag.
 
