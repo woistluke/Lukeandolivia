@@ -27,9 +27,11 @@ Search the file for `EDIT ME` to find every spot at once.
 ## How to add photos
 
 1. Drop your image files into the `images/` folder (e.g. `images/hero.jpg`, `images/us.jpg`).
-2. **Hero background photo:** in `css/style.css`, find the `.hero` rule and
-   the comment above `.hero::before`, and follow the instructions there to
-   swap the illustrated mountains for a real photo.
+2. **Hero photo:** in `css/style.css`, find the `.hero` rule (there's a
+   comment right above it) and follow the instructions there to swap the
+   gradient placeholder for `url('../images/hero.jpg')`. Once you do, you
+   can also delete the `.hero-photo-note` span in `index.html` — it's just
+   a reminder that shows up until you add a real photo.
 3. **Our Story photo:** in `index.html`, find `<div class="story-photo">`
    and replace its contents with `<img src="images/us.jpg" alt="Luke and Olivia">`.
 4. **Things To Do cards:** each `<div class="activity-photo">` can be swapped
@@ -39,8 +41,10 @@ Search the file for `EDIT ME` to find every spot at once.
 
 All colors and fonts are defined as variables at the top of `css/style.css`
 under `:root`. Change a color once there and it updates everywhere. Current
-theme is a rustic mountain palette (forest green, bark brown, cream, rust
-accent) with Fraunces for headings and Karla for body text.
+theme is an editorial, photo-driven mountain look (cream/white background,
+hairline dividers, a muted sage accent) with Cormorant Garamond for
+headings/display type and Jost for body text — inspired by Zola's "Abbey"
+template.
 
 ## Viewing your changes locally
 

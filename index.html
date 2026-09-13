@@ -6,10 +6,10 @@
 <title>Luke &amp; Olivia | Crested Butte Celebration Weekend</title>
 <meta name="description" content="Join Luke &amp; Olivia for a celebration weekend in Crested Butte, Colorado.">
 
-<!-- Fonts: Fraunces for headings, Karla for body text -->
+<!-- Fonts: Cormorant Garamond for display/headings, Jost for body text -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,42 +17,52 @@
 
 <!-- ============ HEADER / NAV ============ -->
 <header class="site-header">
-  <div class="nav-wrap">
+  <div class="utility-bar">
+    <!-- EDIT ME: add your weekend dates -->
+    <span>[Month Day&ndash;Day, 2026] &middot; Crested Butte, CO</span>
+    <!-- EDIT ME: change to whatever hashtag you like, or delete this span -->
+    <span>#LukeAndOliviaLoveButtes</span>
+  </div>
+  <div class="brand-row">
     <a class="brand" href="#top">Luke &amp; Olivia</a>
-    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-    <ul class="nav-links">
-      <li><a href="#story">Our Story</a></li>
-      <li><a href="#schedule">The Weekend</a></li>
-      <li><a href="#travel">Travel &amp; Stay</a></li>
-      <li><a href="#things-to-do">Things To Do</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#rsvp">RSVP</a></li>
-      <li><a href="#registry">Registry</a></li>
-    </ul>
+  </div>
+  <div class="nav-row">
+    <div class="nav-wrap">
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#schedule">The Weekend</a></li>
+        <li><a href="#travel">Travel &amp; Stay</a></li>
+        <li><a href="#things-to-do">Things To Do</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+        <li><a href="#registry">Registry</a></li>
+      </ul>
+    </div>
   </div>
 </header>
 
 <!-- ============ HERO ============ -->
-<!-- EDIT ME: swap the mountain SVG for a real photo of you two by changing
-     the .hero background rule in css/style.css (instructions are right there). -->
+<!-- EDIT ME: once you have a great full-width photo of you two, drop it in
+     images/hero.jpg and follow the instructions above .hero in
+     css/style.css to swap the background gradient for that photo. -->
 <section class="hero" id="top">
+  <span class="hero-photo-note">Add photo: images/hero.jpg</span>
   <div class="hero-content">
-    <p class="hero-eyebrow">A Celebration Weekend</p>
-    <h1>Luke <span class="amp">&amp;</span> Olivia</h1>
-    <p class="hero-details">Crested Butte, Colorado &middot; <!-- EDIT ME: add your weekend dates -->[Month Day&ndash;Day, 2026]</p>
+    <p class="hero-eyebrow">We're Celebrating</p>
+    <h1>Luke &amp; Olivia</h1>
+    <p class="hero-details">Crested Butte, Colorado &middot; <!-- EDIT ME -->[Month Day&ndash;Day, 2026]</p>
     <p class="hero-blurb">
       <!-- EDIT ME: your welcome blurb -->
       We're not having a wedding &mdash; we're throwing a weekend in the mountains
       with the people we love. Come hike, eat, laugh, and celebrate with us in Crested Butte.
     </p>
     <div class="hero-ctas">
-      <a class="btn" href="#rsvp">RSVP</a>
-      <a class="btn btn-outline" href="#schedule">See the Weekend</a>
+      <a class="btn btn-light" href="#rsvp">RSVP</a>
+      <a class="btn btn-light" href="#schedule">See the Weekend</a>
     </div>
   </div>
 </section>
-
-<div class="topo-divider"></div>
 
 <!-- ============ OUR STORY ============ -->
 <section id="story">
@@ -93,37 +103,37 @@
 
     <div class="timeline">
       <!-- EDIT ME: update each day's date, times, and events -->
-      <div class="timeline-card">
+      <div class="timeline-day-block">
         <div class="timeline-day">
           <span class="day-name">Friday</span>
           <span class="day-date">[Month Day]</span>
         </div>
         <ul class="timeline-events">
-          <li><span class="event-time">4:00 PM</span><span>Welcome &amp; check-in</span></li>
-          <li><span class="event-time">6:30 PM</span><span>Casual welcome dinner / happy hour</span></li>
+          <li><span class="event-time">4:00 PM</span><span class="event-desc">Welcome &amp; check-in</span></li>
+          <li><span class="event-time">6:30 PM</span><span class="event-desc">Casual welcome dinner / happy hour</span></li>
         </ul>
       </div>
 
-      <div class="timeline-card">
+      <div class="timeline-day-block">
         <div class="timeline-day">
           <span class="day-name">Saturday</span>
           <span class="day-date">[Month Day]</span>
         </div>
         <ul class="timeline-events">
-          <li><span class="event-time">9:00 AM</span><span>Group hike / morning activity</span></li>
-          <li><span class="event-time">1:00 PM</span><span>Free time &mdash; explore town</span></li>
-          <li><span class="event-time">6:00 PM</span><span>Celebration dinner</span></li>
-          <li><span class="event-time">9:00 PM</span><span>Bonfire &amp; drinks</span></li>
+          <li><span class="event-time">9:00 AM</span><span class="event-desc">Group hike / morning activity</span></li>
+          <li><span class="event-time">1:00 PM</span><span class="event-desc">Free time &mdash; explore town</span></li>
+          <li><span class="event-time">6:00 PM</span><span class="event-desc">Celebration dinner</span></li>
+          <li><span class="event-time">9:00 PM</span><span class="event-desc">Bonfire &amp; drinks</span></li>
         </ul>
       </div>
 
-      <div class="timeline-card">
+      <div class="timeline-day-block">
         <div class="timeline-day">
           <span class="day-name">Sunday</span>
           <span class="day-date">[Month Day]</span>
         </div>
         <ul class="timeline-events">
-          <li><span class="event-time">10:00 AM</span><span>Farewell brunch</span></li>
+          <li><span class="event-time">10:00 AM</span><span class="event-desc">Farewell brunch</span></li>
         </ul>
       </div>
     </div>
@@ -139,8 +149,8 @@
     </div>
 
     <div class="info-grid">
-      <div class="info-card">
-        <h3>&#9992;&#65039; Flying In</h3>
+      <div class="info-item">
+        <h3>Flying In</h3>
         <p>
           <!-- EDIT ME -->
           The closest airport is Gunnison-Crested Butte Regional Airport (GUC),
@@ -148,24 +158,24 @@
           alternative, roughly 1.5&ndash;2 hours by car.
         </p>
       </div>
-      <div class="info-card">
-        <h3>&#128663; Driving</h3>
+      <div class="info-item">
+        <h3>Driving</h3>
         <p>
           <!-- EDIT ME -->
           Add driving directions or notes here if guests are coming from a
           specific direction (Denver is about a 4.5 hour drive).
         </p>
       </div>
-      <div class="info-card">
-        <h3>&#127960;&#65039; Where to Stay</h3>
+      <div class="info-item">
+        <h3>Where to Stay</h3>
         <p>
           <!-- EDIT ME -->
           List your recommended hotels, condos, or a room block here, with
           links and booking codes if you have them.
         </p>
       </div>
-      <div class="info-card">
-        <h3>&#128663; Parking</h3>
+      <div class="info-item">
+        <h3>Parking</h3>
         <p>
           <!-- EDIT ME -->
           Add any parking notes for the weekend's events.
@@ -185,27 +195,21 @@
     </div>
 
     <div class="activity-grid">
-      <!-- EDIT ME: swap in real photos and details for each activity -->
+      <!-- EDIT ME: swap each activity-photo div for an <img src="images/..."> -->
       <div class="activity-card">
         <div class="activity-photo">&#127956;</div>
-        <div class="activity-body">
-          <h3>Hiking</h3>
-          <p>Trails for every level, right out of town &mdash; wildflowers in bloom all summer.</p>
-        </div>
+        <h3>Hiking</h3>
+        <p>Trails for every level, right out of town &mdash; wildflowers in bloom all summer.</p>
       </div>
       <div class="activity-card">
         <div class="activity-photo">&#128690;</div>
-        <div class="activity-body">
-          <h3>Mountain Biking</h3>
-          <p>Crested Butte is the birthplace of mountain biking &mdash; trails for all levels.</p>
-        </div>
+        <h3>Mountain Biking</h3>
+        <p>Crested Butte is the birthplace of mountain biking &mdash; trails for all levels.</p>
       </div>
       <div class="activity-card">
         <div class="activity-photo">&#127981;</div>
-        <div class="activity-body">
-          <h3>Downtown &amp; Breweries</h3>
-          <p>Colorful storefronts, local shops, and a few great breweries to explore.</p>
-        </div>
+        <h3>Downtown &amp; Breweries</h3>
+        <p>Colorful storefronts, local shops, and a few great breweries to explore.</p>
       </div>
     </div>
   </div>
