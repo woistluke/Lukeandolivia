@@ -26,12 +26,12 @@ Search the file for `EDIT ME` to find every spot at once.
 
 ## How to add photos
 
-1. Drop your image files into the `images/` folder (e.g. `images/hero.jpg`, `images/us.jpg`).
-2. **Hero photo:** in `css/style.css`, find the `.hero` rule (there's a
-   comment right above it) and follow the instructions there to swap the
-   gradient placeholder for `url('../images/hero.jpg')`. Once you do, you
-   can also delete the `.hero-photo-note` span in `index.html` — it's just
-   a reminder that shows up until you add a real photo.
+1. Drop your image files into the `images/` folder.
+2. **Hero photo:** already set to `images/hero.jpg`. To swap it for a
+   different photo, just replace that file with a new one of the same name
+   (or edit the `url()` in the `.hero` rule in `css/style.css` to point at a
+   different filename). Adjust `background-position` there if the photo
+   gets cropped in a spot you don't like.
 3. **Our Story photo:** in `index.html`, find `<div class="story-photo">`
    and replace its contents with `<img src="images/us.jpg" alt="Luke and Olivia">`.
 4. **Things To Do cards:** each `<div class="activity-photo">` can be swapped

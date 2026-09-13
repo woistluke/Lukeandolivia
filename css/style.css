@@ -221,10 +221,9 @@ hr.rule {
 }
 
 /* ---- Hero ---- */
-/* EDIT ME: once you have a full-width photo of you two, drop it in
-   images/hero.jpg and swap the background rule below for:
-   background-image: url('../images/hero.jpg');
-   background-size: cover; background-position: center; */
+/* EDIT ME: to swap this for a different photo, just replace images/hero.jpg
+   with a new file of the same name, or change the url() below. Adjust
+   background-position (e.g. "center 40%") to reframe which part shows. */
 .hero {
   position: relative;
   min-height: 82vh;
@@ -234,7 +233,9 @@ hr.rule {
   text-align: center;
   color: var(--paper);
   overflow: hidden;
-  background: linear-gradient(160deg, #7c8a6a 0%, #5b6b53 45%, #3f4c3c 100%);
+  background-image: url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center 62%;
 }
 
 .hero::after {
@@ -242,19 +243,6 @@ hr.rule {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgba(30, 35, 25, 0.05) 0%, rgba(20, 24, 17, 0.55) 100%);
-}
-
-.hero-photo-note {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  z-index: 2;
-  font-size: 0.68rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.6);
-  border: 1px dashed rgba(255, 255, 255, 0.4);
-  padding: 0.4rem 0.75rem;
 }
 
 .hero-content {
