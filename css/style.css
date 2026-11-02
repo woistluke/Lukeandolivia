@@ -438,6 +438,16 @@ hr.rule {
   color: var(--rule);
   font-size: 1.8rem;
   margin-bottom: 1.25rem;
+  overflow: hidden;
+}
+
+/* When a card uses a real photo, fill the 4:3 frame and crop the excess */
+.activity-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .activity-card h3 { font-size: 1.2rem; margin-bottom: 0.4rem; }
